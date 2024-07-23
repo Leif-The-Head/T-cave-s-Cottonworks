@@ -96,7 +96,7 @@
           },
           "deliveryPhases": [
             {
-              "cost": -500,
+              "cost": 0,
               "deliveries": [
                 {
                   "direction": 0,

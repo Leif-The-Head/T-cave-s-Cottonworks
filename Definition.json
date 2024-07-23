@@ -2,7 +2,7 @@
   "manifestVersion": 5,
   "id": "Tcave.TcavesCottonworks",
   "name": "T-cave's Cottonworks",
-  "version": "1.0",
+  "version": "0.10.1",
   "requires": [
     {
       "id": "railloader",
