@@ -1,8 +1,8 @@
 {
   "manifestVersion": 5,
-  "id": "Tcave.TcavesMachiningAndManufacturing",
-  "name": "T-cave's Machining and Manufacturing",
-  "version": "0.9.6",
+  "id": "Tcave.TcavesCottonworks",
+  "name": "T-cave's Cottonworks",
+  "version": "1.0",
   "requires": [
     {
       "id": "railloader",
@@ -18,15 +18,14 @@
     },
     {
       "id": "AlinaNova21.AlinasMapMod",
-      "notBefore": "1.3.24087.634"
-    },
-    {
-      "id": "Tcave.TcavesMOWcarWorkmen",
-      "notBefore": "1.0"
+      "notBefore": "1.4"
     }
   ],
+  "loadAfter": [
+    "PrinceOfPluto.BrysonHumpYard"
+  ],
   "mixintos": {
-    "game-graph": "file(TcavesMachiningAndManufacturing.json)",
+    "game-graph": "file(TcavesCottonworks.json)",
     "progressions": "file(progressions.json)"
   }
 }

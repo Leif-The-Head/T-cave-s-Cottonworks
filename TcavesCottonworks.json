@@ -1,0 +1,1138 @@
+{
+  "areas": {
+    "bryson": {
+      "industries": {
+        "TMM_Bryson_Cottonworks": {
+          "name": "Wild Oak Cottonworks Co.",
+          "localPosition": {
+            "x": -88.6860352,
+            "y": -0.648376465,
+            "z": 60.39258
+          },
+          "usesContract": true,
+          "components": {
+            "formula-high": {
+              "type": "Model.OpsNew.FormulaicIndustryComponent",
+              "name": "Wild Oak Cottonworks Co.",
+              "trackSpans": [],
+              "carTypeFilter": "",
+              "sharedStorage": true,
+              "inputTermsPerDay": {
+                "cotton": 2100000.0,
+                "coal": 900000.0,
+                "caustic-soda": 450000.0,
+                "tannic-acid": 300000.0,
+                "chemicals-2": 9000.0,
+                "chemicals-3": 7500.0
+              },
+              "outputTermsPerDay": {
+                "textiles": 300000.0,
+                "yarn": 300000.0,
+                "sewing-thread": 300000.0,
+                "chemicals": 18000.0
+              }
+            },
+            "formula-low": {
+              "type": "Model.OpsNew.FormulaicIndustryComponent",
+              "name": "Wild Oak Cottonworks Co.",
+              "trackSpans": [],
+              "carTypeFilter": "",
+              "sharedStorage": true,
+              "inputTermsPerDay": {
+                "cotton": 700000.0,
+                "coal": 300000.0,
+                "caustic-soda": 150000.0,
+                "tannic-acid": 100000.0,
+                "chemicals-2": 3000.0,
+                "chemicals-3": 2500.0
+              },
+              "outputTermsPerDay": {
+                "textiles": 100000.0,
+                "yarn": 100000.0,
+                "sewing-thread": 100000.0,
+                "chemicals": 6000.0
+              }
+            },
+            "cotton": {
+              "type": "Model.OpsNew.IndustryUnloader",
+              "name": "Wild Oak Cottonworks Co. MH1",
+              "trackSpans": [
+                "PTMM_Bryson_Cottonworks_Machine_Building"
+              ],
+              "carTypeFilter": "XM*",
+              "sharedStorage": true,
+              "loadId": "cotton",
+              "storageChangeRate": 0.0,
+              "maxStorage": 4000000.0,
+              "orderAroundEmpties": true,
+              "carTransferRate": 4000000.0,
+              "orderAroundLoaded": true
+            },
+            "coal": {
+              "type": "Model.OpsNew.IndustryUnloader",
+              "name": "Wild Oak Cottonworks Co. PH1",
+              "trackSpans": [
+                "PTMM_Bryson_Cottonworks_Powerhouse"
+              ],
+              "carTypeFilter": "HM,HT",
+              "sharedStorage": true,
+              "loadId": "coal",
+              "storageChangeRate": 0.0,
+              "maxStorage": 2000000.0,
+              "orderAroundEmpties": true,
+              "carTransferRate": 1000000.0,
+              "orderAroundLoaded": true
+            },
+            "caustic-soda": {
+              "type": "Model.OpsNew.IndustryUnloader",
+              "name": "Wild Oak Cottonworks Co. F1",
+              "trackSpans": [
+                "PTMM_Bryson_Cottonworks_Finishing"
+              ],
+              "carTypeFilter": "XM*",
+              "sharedStorage": true,
+              "loadId": "caustic-soda",
+              "storageChangeRate": 0.0,
+              "maxStorage": 900000.0,
+              "orderAroundEmpties": true,
+              "carTransferRate": 1000000.0,
+              "orderAroundLoaded": true
+            },
+            "tannic-acid": {
+              "type": "Model.OpsNew.IndustryUnloader",
+              "name": "Wild Oak Cottonworks Co. F1",
+              "trackSpans": [
+                "PTMM_Bryson_Cottonworks_Finishing"
+              ],
+              "carTypeFilter": "XM*",
+              "sharedStorage": true,
+              "loadId": "tannic-acid",
+              "storageChangeRate": 0.0,
+              "maxStorage": 600000.0,
+              "orderAroundEmpties": true,
+              "carTransferRate": 1000000.0,
+              "orderAroundLoaded": true
+            },
+            "chemicals-2": {
+              "type": "Model.OpsNew.IndustryUnloader",
+              "name": "Wild Oak Cottonworks Co. C1",
+              "trackSpans": [
+                "PTMM_Bryson_Cottonworks_Chemicals"
+              ],
+              "carTypeFilter": "T*",
+              "sharedStorage": true,
+              "loadId": "chemicals-2",
+              "storageChangeRate": 0.0,
+              "maxStorage": 50000.0,
+              "orderAroundEmpties": true,
+              "carTransferRate": 160000.0,
+              "orderAroundLoaded": true
+            },
+            "chemicals-3": {
+              "type": "Model.OpsNew.IndustryUnloader",
+              "name": "Wild Oak Cottonworks Co. C1",
+              "trackSpans": [
+                "PTMM_Bryson_Cottonworks_Chemicals"
+              ],
+              "carTypeFilter": "T*",
+              "sharedStorage": true,
+              "loadId": "chemicals-3",
+              "storageChangeRate": 0.0,
+              "maxStorage": 50000.0,
+              "orderAroundEmpties": true,
+              "carTransferRate": 160000.0,
+              "orderAroundLoaded": true
+            },
+            "chemicals": {
+              "type": "Model.OpsNew.IndustryLoader",
+              "name": "Wild Oak Cottonworks Co. C1",
+              "trackSpans": [
+                "PTMM_Bryson_Cottonworks_Chemicals"
+              ],
+              "carTypeFilter": "T*",
+              "sharedStorage": true,
+              "loadId": "chemicals",
+              "storageChangeRate": 0.0,
+              "maxStorage": 24000.0,
+              "orderAroundEmpties": true,
+              "carTransferRate": 160000.0,
+              "orderAroundLoaded": true
+            },
+            "textiles": {
+              "type": "Model.OpsNew.IndustryLoader",
+              "name": "Wild Oak Cottonworks Co. R1/R2",
+              "trackSpans": [
+                "PTMM_Bryson_Cottonworks_Freight_Storage_1",
+                "PTMM_Bryson_Cottonworks_Freight_Storage_2"
+              ],
+              "carTypeFilter": "XM*",
+              "sharedStorage": true,
+              "loadId": "textiles",
+              "storageChangeRate": 0.0,
+              "maxStorage": 200000.0,
+              "orderAroundEmpties": true,
+              "carTransferRate": 500000.0,
+              "orderAroundLoaded": true
+            },
+            "yarn": {
+              "type": "Model.OpsNew.IndustryLoader",
+              "name": "Wild Oak Cottonworks Co. R1/R2",
+              "trackSpans": [
+                "PTMM_Bryson_Cottonworks_Freight_Storage_1",
+                "PTMM_Bryson_Cottonworks_Freight_Storage_2"
+              ],
+              "carTypeFilter": "XM*",
+              "sharedStorage": true,
+              "loadId": "yarn",
+              "storageChangeRate": 0.0,
+              "maxStorage": 200000.0,
+              "orderAroundEmpties": true,
+              "carTransferRate": 500000.0,
+              "orderAroundLoaded": true
+            },
+            "sewing-thread": {
+              "type": "Model.OpsNew.IndustryLoader",
+              "name": "Wild Oak Cottonworks Co. R1/R2",
+              "trackSpans": [
+                "PTMM_Bryson_Cottonworks_Freight_Storage_1",
+                "PTMM_Bryson_Cottonworks_Freight_Storage_2"
+              ],
+              "carTypeFilter": "XM*",
+              "sharedStorage": true,
+              "loadId": "sewing-thread",
+              "storageChangeRate": 0.0,
+              "maxStorage": 200000.0,
+              "orderAroundEmpties": true,
+              "carTransferRate": 500000.0,
+              "orderAroundLoaded": true
+            },
+            "expantion_site": {
+              "name": "Wild Oak Cottonworks Co. Upgrade",
+              "type": "Model.OpsNew.ProgressionIndustryComponent",
+              "carTypeFilter": "*",
+              "sharedStorage": true,
+              "trackSpans": [
+                "PTMM_Bryson_Cottonworks_Freight_Storage_1",
+                "PTMM_Bryson_Cottonworks_Freight_Storage_2",
+                "PTMM_Bryson_Cottonworks_Finishing",
+                "PTMM_Bryson_Cottonworks_Machine_Building",
+                "PTMM_Bryson_Cottonworks_Powerhouse"
+              ]
+            }
+          }
+        },
+        "TMM_Progression_Bryson_Cottonworks": {
+          "name": "Wild Oak Cottonworks Co.",
+          "localPosition": {
+            "x": -88.6860352,
+            "y": -0.648376465,
+            "z": 60.39258
+          },
+          "usesContract": false,
+          "components": {
+            "build_site": {
+              "name": "Wild Oak Cottonworks Co. Building Site",
+              "type": "Model.OpsNew.ProgressionIndustryComponent",
+              "carTypeFilter": "*",
+              "sharedStorage": true,
+              "trackSpans": [
+                "PTMM_Bryson_Cottonworks_Building_Site"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "scenery": {
+    "CTMM_Bryson_Cottonworks_Machine_Building": {
+      "position": {
+        "x": 4905,
+        "y": 530,
+        "z": 6030
+      },
+      "rotation": {
+        "x": 0,
+        "y": -15,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "modelIdentifier": "paperboard-debarking"
+    },
+    "CTMM_Bryson_Cottonworks_Powerhouse": {
+      "position": {
+        "x": 4958,
+        "y": 530,
+        "z": 5878
+      },
+      "rotation": {
+        "x": 0,
+        "y": 55,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "modelIdentifier": "power-house-large"
+    },
+    "CTMM_Bryson_Cottonworks_Powerstack": {
+      "position": {
+        "x": 4948,
+        "y": 530,
+        "z": 5885.9
+      },
+      "rotation": {
+        "x": 0,
+        "y": 145,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "modelIdentifier": "power-house-stack"
+    },
+    "CTMM_Bryson_Cottonworks_Finishing": {
+      "position": {
+        "x": 4905,
+        "y": 530.1,
+        "z": 5890
+      },
+      "rotation": {
+        "x": 0,
+        "y": -25,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "modelIdentifier": "paperboard-shredding"
+    },
+    "CTMM_Bryson_Cottonworks_Freight_Storage": {
+      "position": {
+        "x": 4918,
+        "y": 530,
+        "z": 5985
+      },
+      "rotation": {
+        "x": 0,
+        "y": 160,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "modelIdentifier": "freight-house-general"
+    }
+  },
+  "tracks": {
+    "nodes": {
+      "NTMM_Bryson_Cottonworks_kwz8": {
+        "position": {
+          "x": 4939.705,
+          "y": 530.4015,
+          "z": 5889.54248
+        },
+        "rotation": {
+          "x": 4.885332E-12,
+          "y": 335.0,
+          "z": -7.19416639E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_8y35": {
+        "position": {
+          "x": 4903.20361,
+          "y": 530.395752,
+          "z": 5924.40869
+        },
+        "rotation": {
+          "x": 4.966754E-11,
+          "y": 354.996765,
+          "z": -7.19588061E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_3u46": {
+        "position": {
+          "x": 4983.4585,
+          "y": 530.399658,
+          "z": 5845.5166
+        },
+        "rotation": {
+          "x": -1.628444E-12,
+          "y": 325.0,
+          "z": -7.195466E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_r7zj": {
+        "position": {
+          "x": 4951.912,
+          "y": 530.399536,
+          "z": 5890.56934
+        },
+        "rotation": {
+          "x": -1.628444E-12,
+          "y": 325.0,
+          "z": -7.195466E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_99yf": {
+        "position": {
+          "x": 4924.205,
+          "y": 530.395752,
+          "z": 5948.63867
+        },
+        "rotation": {
+          "x": -1.95413286E-11,
+          "y": 324.436981,
+          "z": -7.195879E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_x2st": {
+        "position": {
+          "x": 4955.06738,
+          "y": 530.395752,
+          "z": 5905.68652
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 324.136963,
+          "z": -7.19587842E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_g4la": {
+        "position": {
+          "x": 4982.29248,
+          "y": 530.395752,
+          "z": 5867.9917
+        },
+        "rotation": {
+          "x": 359.899841,
+          "y": 324.136963,
+          "z": -7.19238742E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_x3yc": {
+        "position": {
+          "x": 5007.39844,
+          "y": 530.395752,
+          "z": 5837.09961
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 313.636963,
+          "z": -7.19570962E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_kcy4": {
+        "position": {
+          "x": 4966.30664,
+          "y": 530.3989,
+          "z": 5880.70654
+        },
+        "rotation": {
+          "x": -3.256888E-12,
+          "y": 323.636963,
+          "z": -7.195713E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_5nnk": {
+        "position": {
+          "x": 5030.85059,
+          "y": 530.3657,
+          "z": 5813.95264
+        },
+        "rotation": {
+          "x": 359.9,
+          "y": 315.636963,
+          "z": -7.1970564E-05
+        },
+        "flipSwitchStand": false
+      },
+      "N2bg": {
+        "position": {
+          "x": 5073.64551,
+          "y": 528.891235,
+          "z": 5698.698
+        },
+        "rotation": {
+          "x": 0.250001371,
+          "y": 13.5370045,
+          "z": 359.099976
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_0s01": {
+        "position": {
+          "x": 4899.255,
+          "y": 530.395752,
+          "z": 6001.055
+        },
+        "rotation": {
+          "x": 4.07111E-11,
+          "y": 344.996765,
+          "z": -7.195871E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_lw7d": {
+        "position": {
+          "x": 4882.68555,
+          "y": 530.6958,
+          "z": 6062.87451
+        },
+        "rotation": {
+          "x": 4.8039097E-11,
+          "y": 344.996765,
+          "z": -7.195871E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_22h5": {
+        "position": {
+          "x": 4876.89,
+          "y": 530.6957,
+          "z": 6061.32129
+        },
+        "rotation": {
+          "x": 4.8039097E-11,
+          "y": 344.996765,
+          "z": -7.195871E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_dzig": {
+        "position": {
+          "x": 4929.731,
+          "y": 530.399048,
+          "z": 5931.3457
+        },
+        "rotation": {
+          "x": -2.60551043E-11,
+          "y": 324.636963,
+          "z": -7.195709E-05
+        },
+        "flipSwitchStand": true
+      },
+      "NTMM_Bryson_Cottonworks_kpdv": {
+        "position": {
+          "x": 4893.45947,
+          "y": 530.395752,
+          "z": 5999.502
+        },
+        "rotation": {
+          "x": 4.8039097E-11,
+          "y": 344.996765,
+          "z": -7.195871E-05
+        },
+        "flipSwitchStand": true
+      },
+      "NTMM_Bryson_Cottonworks_7rs3": {
+        "position": {
+          "x": 4935.799,
+          "y": 530.395752,
+          "z": 5932.478
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 324.136963,
+          "z": -7.19587842E-05
+        },
+        "flipSwitchStand": true
+      },
+      "NTMM_Bryson_Cottonworks_xhuv": {
+        "position": {
+          "x": 4969.697,
+          "y": 530.395752,
+          "z": 5885.415
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 324.136963,
+          "z": -7.19587842E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_5n6u": {
+        "position": {
+          "x": 4911.05762,
+          "y": 530.3989,
+          "z": 5959.2207
+        },
+        "rotation": {
+          "x": -2.76835482E-11,
+          "y": 328.636963,
+          "z": -7.195708E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_e150": {
+        "position": {
+          "x": 4901.06836,
+          "y": 530.395752,
+          "z": 5977.835
+        },
+        "rotation": {
+          "x": 3.41973255E-11,
+          "y": 336.4368,
+          "z": -7.195894E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_4pdb": {
+        "position": {
+          "x": 4952.19,
+          "y": 530.395752,
+          "z": 5914.908
+        },
+        "rotation": {
+          "x": -4.885332E-12,
+          "y": 333.036438,
+          "z": -7.195894E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_voak": {
+        "position": {
+          "x": 4923.32031,
+          "y": 530.395752,
+          "z": 5954.745
+        },
+        "rotation": {
+          "x": -1.628444E-12,
+          "y": 335.537,
+          "z": -7.195889E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_npwz": {
+        "position": {
+          "x": 4918.64063,
+          "y": 530.3015,
+          "z": 5966.401
+        },
+        "rotation": {
+          "x": 0.5000103,
+          "y": 339.999969,
+          "z": -7.197986E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_s2tm": {
+        "position": {
+          "x": 4909.16553,
+          "y": 530.1017,
+          "z": 5992.43066
+        },
+        "rotation": {
+          "x": -3.33831018E-11,
+          "y": 339.999969,
+          "z": -7.194175E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_5vb3": {
+        "position": {
+          "x": 4919.18555,
+          "y": 530.3015,
+          "z": 5998.525
+        },
+        "rotation": {
+          "x": -1.30275521E-11,
+          "y": 339.999969,
+          "z": -7.19416857E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_41f9": {
+        "position": {
+          "x": 4933.038,
+          "y": 530.3015,
+          "z": 5960.46729
+        },
+        "rotation": {
+          "x": -1.70986628E-11,
+          "y": 339.999969,
+          "z": -7.19416857E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_cfee": {
+        "position": {
+          "x": 4916.4624,
+          "y": 530.4016,
+          "z": 5939.38867
+        },
+        "rotation": {
+          "x": 360.000031,
+          "y": 335.0,
+          "z": -7.19680756E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NTMM_Bryson_Cottonworks_1fuk": {
+        "position": {
+          "x": 4899.2793,
+          "y": 530.395752,
+          "z": 5969.2373
+        },
+        "rotation": {
+          "x": 4.966754E-11,
+          "y": 354.996765,
+          "z": -7.19588061E-05
+        },
+        "flipSwitchStand": false
+      },
+      "NPOP_Bryson_Extra_Yard_B_00": {
+        "position": {
+          "x": 5038.229,
+          "y": 529.0,
+          "z": 5639.778
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 58.6300163,
+          "z": 0.0
+        },
+        "flipSwitchStand": true
+      },
+      "NPOP_Bryson_Extra_Yard_B_01": {
+        "position": {
+          "x": 5083.675,
+          "y": 528.6201,
+          "z": 5698.959
+        },
+        "rotation": {
+          "x": 2.668043E-08,
+          "y": 12.9400053,
+          "z": -2.38418522E-07
+        },
+        "flipSwitchStand": false
+      },
+      "NPOP_Bryson_Extra_Yard_B_02": {
+        "position": {
+          "x": 5061.299,
+          "y": 529.0,
+          "z": 5795.429
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 322.539948,
+          "z": 0.0
+        },
+        "flipSwitchStand": false
+      },
+      "NPOP_Bryson_Extra_Yard_00": {
+        "position": {
+          "x": 5056.131,
+          "y": 530.06,
+          "z": 5792.234
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 323.339966,
+          "z": 0.0
+        },
+        "flipSwitchStand": false
+      },
+      "NPOP_Bryson_Extra_Yard_01": {
+        "position": {
+          "x": 5032.001,
+          "y": 529.0,
+          "z": 5824.953
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 323.94,
+          "z": 0.0
+        },
+        "flipSwitchStand": false
+      },
+      "NPOP_Bryson_Extra_Yard_B_03": {
+        "position": {
+          "x": 5079.24658,
+          "y": 528.69,
+          "z": 5699.31055
+        },
+        "rotation": {
+          "x": -4.46237282E-05,
+          "y": 12.0398436,
+          "z": 4.885332E-12
+        },
+        "flipSwitchStand": true
+      }
+    },
+    "segments": {
+      "STMM_Bryson_Cottonworks_q1qw": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_5n6u",
+        "endId": "NTMM_Bryson_Cottonworks_e150",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_nkw6": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_e150",
+        "endId": "NTMM_Bryson_Cottonworks_kpdv",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_l4jm": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_kwz8",
+        "endId": "NTMM_Bryson_Cottonworks_cfee",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_owwa": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_cfee",
+        "endId": "NTMM_Bryson_Cottonworks_e150",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_tt6t": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_1fuk",
+        "endId": "NTMM_Bryson_Cottonworks_kpdv",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_htyd": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_xhuv",
+        "endId": "NTMM_Bryson_Cottonworks_x2st",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_y89h": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_x2st",
+        "endId": "NTMM_Bryson_Cottonworks_7rs3",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_u89x": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_x2st",
+        "endId": "NTMM_Bryson_Cottonworks_5n6u",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_exic": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_x3yc",
+        "endId": "NTMM_Bryson_Cottonworks_kcy4",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_d2ay": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_kcy4",
+        "endId": "NTMM_Bryson_Cottonworks_dzig",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_13cy": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_dzig",
+        "endId": "NTMM_Bryson_Cottonworks_5n6u",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_0xgl": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_r7zj",
+        "endId": "NTMM_Bryson_Cottonworks_dzig",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_t67p": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_g4la",
+        "endId": "NTMM_Bryson_Cottonworks_xhuv",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_w4c3": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_7rs3",
+        "endId": "NTMM_Bryson_Cottonworks_99yf",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_v578": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_99yf",
+        "endId": "NTMM_Bryson_Cottonworks_0s01",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_nubt": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_xhuv",
+        "endId": "NTMM_Bryson_Cottonworks_4pdb",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_tnu5": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_4pdb",
+        "endId": "NTMM_Bryson_Cottonworks_41f9",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_1p8i": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_7rs3",
+        "endId": "NTMM_Bryson_Cottonworks_voak",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_fet3": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_voak",
+        "endId": "NTMM_Bryson_Cottonworks_npwz",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_tj75": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_5vb3",
+        "endId": "NTMM_Bryson_Cottonworks_41f9",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_2hgb": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_npwz",
+        "endId": "NTMM_Bryson_Cottonworks_s2tm",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_383v": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_1fuk",
+        "endId": "NTMM_Bryson_Cottonworks_8y35",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_rjbt": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_3u46",
+        "endId": "NTMM_Bryson_Cottonworks_r7zj",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_75w6": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_0s01",
+        "endId": "NTMM_Bryson_Cottonworks_lw7d",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_e7fx": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_kpdv",
+        "endId": "NTMM_Bryson_Cottonworks_22h5",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_cnt8": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "N2bg",
+        "endId": "NTMM_Bryson_Cottonworks_5nnk",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_tyma": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_5nnk",
+        "endId": "NTMM_Bryson_Cottonworks_x3yc",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "STMM_Bryson_Cottonworks_9a6q": {
+        "style": "Standard",
+        "trackClass": "Industrial",
+        "startId": "NTMM_Bryson_Cottonworks_x3yc",
+        "endId": "NTMM_Bryson_Cottonworks_g4la",
+        "priority": 0,
+        "speedLimit": 15,
+        "groupId": "TMM_Bryson_Cottonworks"
+      },
+      "SPOP_Bryson_Extra_Yard_00": {
+        "startId": "NPOP_Bryson_Extra_Yard_B_03"
+      },
+      "SPOP_Bryson_Extra_Yard_B_03": {
+        "endId": "NPOP_Bryson_Extra_Yard_B_00"
+      },
+      "SPOP_Bryson_Extra_Yard_B_04": {
+        "endId": "NPOP_Bryson_Extra_Yard_B_02"
+      },
+      "S24e": {
+        "priority": 1
+      }
+    },
+    "spans": {
+      "PTMM_Bryson_Cottonworks_Chemicals": {
+        "upper": {
+          "segmentId": "STMM_Bryson_Cottonworks_383v",
+          "distance": 0.0,
+          "end": "Start"
+        },
+        "lower": {
+          "segmentId": "STMM_Bryson_Cottonworks_383v",
+          "distance": 0.0,
+          "end": "End"
+        }
+      },
+      "PTMM_Bryson_Cottonworks_Finishing": {
+        "upper": {
+          "segmentId": "STMM_Bryson_Cottonworks_owwa",
+          "distance": 30.0,
+          "end": "End"
+        },
+        "lower": {
+          "segmentId": "STMM_Bryson_Cottonworks_l4jm",
+          "distance": 0.0,
+          "end": "Start"
+        }
+      },
+      "PTMM_Bryson_Cottonworks_Powerhouse": {
+        "upper": {
+          "segmentId": "STMM_Bryson_Cottonworks_0xgl",
+          "distance": 30.0,
+          "end": "End"
+        },
+        "lower": {
+          "segmentId": "STMM_Bryson_Cottonworks_rjbt",
+          "distance": 0.0,
+          "end": "Start"
+        }
+      },
+      "PTMM_Bryson_Cottonworks_Freight_Storage_1": {
+        "upper": {
+          "segmentId": "STMM_Bryson_Cottonworks_tj75",
+          "distance": 0.0,
+          "end": "start"
+        },
+        "lower": {
+          "segmentId": "STMM_Bryson_Cottonworks_tnu5",
+          "distance": 5.0,
+          "end": "Start"
+        }
+      },
+      "PTMM_Bryson_Cottonworks_Freight_Storage_2": {
+        "upper": {
+          "segmentId": "STMM_Bryson_Cottonworks_2hgb",
+          "distance": 0.0,
+          "end": "End"
+        },
+        "lower": {
+          "segmentId": "STMM_Bryson_Cottonworks_2hgb",
+          "distance": 0.0,
+          "end": "Start"
+        }
+      },
+      "PTMM_Bryson_Cottonworks_Machine_Building": {
+        "upper": {
+          "segmentId": "STMM_Bryson_Cottonworks_75w6",
+          "distance": 0.0,
+          "end": "End"
+        },
+        "lower": {
+          "segmentId": "STMM_Bryson_Cottonworks_75w6",
+          "distance": 0.0,
+          "end": "Start"
+        }
+      },
+      "PTMM_Bryson_Cottonworks_Building_Site": {
+        "upper": {
+          "segmentId": "Shni",
+          "distance": 40.0,
+          "end": "Start"
+        },
+        "lower": {
+          "segmentId": "S24e",
+          "distance": 0.0,
+          "end": "End"
+        }
+      }
+    }
+  },
+  "splineys": {}
+}
