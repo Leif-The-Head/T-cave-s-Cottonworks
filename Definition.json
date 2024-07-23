@@ -24,6 +24,9 @@
   "loadAfter": [
     "PrinceOfPluto.BrysonHumpYard"
   ],
+  "conflictsWith": [
+    "Tcave.TcavesMachiningAndManufacturing"
+  ],
   "mixintos": {
     "game-graph": "file(TcavesCottonworks.json)",
     "progressions": "file(progressions.json)"
